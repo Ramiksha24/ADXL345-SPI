@@ -1,0 +1,17 @@
+# Vivado generated directories
+*.xpr
+*.jou
+*.log
+*.str
+
+ADXL345_SPI.cache/
+ADXL345_SPI.gen/
+ADXL345_SPI.hw/
+ADXL345_SPI.ip_user_files/
+ADXL345_SPI.runs/
+ADXL345_SPI.sim/
+ADXL345_SPI.srcs/
+
+# OS files
+.DS_Store
+Thumbs.db
