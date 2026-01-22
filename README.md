@@ -25,7 +25,7 @@ This repository presents an FPGA-based implementation of a **4-wire SPI interfac
 
 ---
 
-## 🧠 Block Diagram
+##  Block Diagram
 
 The following block diagram illustrates the overall system architecture, showing the SPI master implemented on the FPGA and its interaction with the ADXL345 accelerometer.
 
@@ -33,7 +33,7 @@ The following block diagram illustrates the overall system architecture, showing
 
 ---
 
-## 🧪 Device ID Verification
+##  Device ID Verification
 
 To verify SPI communication, the **DEVID register (address 0x00)** of the ADXL345 was read. The returned value was **0xE5**, which matches the value specified in the datasheet, confirming correct SPI timing, wiring, and protocol implementation.
 
@@ -41,7 +41,7 @@ To verify SPI communication, the **DEVID register (address 0x00)** of the ADXL34
 
 ---
 
-## 📈 ILA Waveform Analysis
+##  ILA Waveform Analysis
 
 The Integrated Logic Analyzer (ILA) was used to monitor SPI signals including **CS, SCLK, MOSI, and MISO**. The waveform confirms correct clock polarity and phase, proper chip select behavior, and accurate data sampling.
 
@@ -49,7 +49,7 @@ The Integrated Logic Analyzer (ILA) was used to monitor SPI signals including **
 
 ---
 
-## 📊 Acceleration Output (X, Y, Z)
+##  Acceleration Output (X, Y, Z)
 
 Real-time acceleration data from the X, Y, and Z axes was observed using the VIO dashboard. The values change dynamically with sensor orientation, and when stationary, one axis measures approximately ±1 g while the others remain close to zero, validating correct accelerometer operation.
 
@@ -57,7 +57,7 @@ Real-time acceleration data from the X, Y, and Z axes was observed using the VIO
 
 ---
 
-## ⏱ Timing and Resource Analysis
+## Timing and Resource Analysis
 
 - All user-defined timing constraints are met  
 - Positive setup and hold slack observed  
@@ -66,7 +66,7 @@ Real-time acceleration data from the X, Y, and Z axes was observed using the VIO
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 The project successfully demonstrates reliable SPI communication between an Artix-7 FPGA and the ADXL345 accelerometer. Correct device identification, accurate three-axis acceleration measurements, clean timing closure, and real hardware validation confirm the robustness of the design. This implementation provides a solid foundation for future motion-sensing and FPGA-based embedded applications.
 
